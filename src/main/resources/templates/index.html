@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BCrypt in Java</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <form action="#" th:action="@{/save}" th:object="${user}" method="post">
+        <div><label>Email:
+        <input type="text" th:field="*{email}"><br>
+        </label></div>
+        <div><label>Password:
+        <input type="text" th:field="*{password}">
+        </label></div>
+        <input  type="submit" value="Save BCrypt"/>
+    </form>
+</body>
+</html>
